@@ -1,6 +1,6 @@
 import React, { Component, useCallback } from "react";
 import Bg from "../src/assets/img/1.gif";
-import Bg1 from "../src/assets/img/bg-2.mp4";
+import Bg1 from "../src/assets/img/bg-2.gif";
 import Bg3 from "../src/assets/img/bg-3.jpg";
 import Bg4 from "../src/assets/img/bg-4.jpg"
 import whatsappImg from "../src/assets/img/whatsapp.png";
@@ -72,13 +72,10 @@ class Zoom extends Component {
       )}
       {this.state.size >= 30 && this.state.size<50 && (
         <div className="normal-bg" onWheel={this.handleScroll}>
-          <video
+          <img
             src={Bg1}
             style={{ width: "100%", height: "100% " }}
             alt=""
-            autoplay="true"
-            controls=""
-            loop
           />
           {
             this.state.images.length>0 &&
@@ -99,6 +96,7 @@ class Zoom extends Component {
             <img src={Bg3} className="shake-bg" alt=""/>
             <div className="relative-title">
               <span>DECENTERALIZED</span>
+              <span><br></br>REALITY</span>
             </div>
           </div>
         )
