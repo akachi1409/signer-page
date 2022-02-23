@@ -77,6 +77,7 @@ class Zoom extends Component {
             style={{ width: "100%", height: "100% " }}
             alt=""
             autoplay="true"
+            controls=""
             loop
           />
           {
@@ -97,7 +98,7 @@ class Zoom extends Component {
           <div className="normal-bg" onWheel={this.handleScroll}>
             <img src={Bg3} className="shake-bg" alt=""/>
             <div className="relative-title">
-              <h2>DECENTERALIZED</h2>
+              <span>DECENTERALIZED</span>
             </div>
           </div>
         )
@@ -109,7 +110,10 @@ class Zoom extends Component {
           </div>
         )
       }
-      <div
+      {
+      this.state.size >= 30 && 
+      (
+        <div
         style={{
           position: "fixed",
           top: "10%",
@@ -122,44 +126,41 @@ class Zoom extends Component {
         <a href="#">
           <img
             src={whatsappImg}
-            style={{ width: "64px", height: "64px", marginBottom: "1em" }}
+            className="whatappImg"
             alt=""
           />
         </a>
         <a href="#">
           <img
             src={linkedImg}
-            style={{ width: "48px", height: "48px", marginBottom: "1em" }}
+            className="linkedImg"
             alt=""
           />
         </a>
         <a href="#">
           <img
             src={youtubeImg}
-            style={{ width: "52px", height: "52px", marginBottom: "1em" }}
+            className="youtubeImg"
             alt=""
           />
         </a>
         <a href="#">
           <img
             src={facebookImg}
-            style={{ width: "52px", height: "52px", marginBottom: "1em" }}
+            className="facebookImg"
             alt=""
           />
         </a>
         <a href="#">
           <img
             src={logoImg}
-            style={{
-              width: "256px",
-              height: "256px",
-              marginBottom: "1em",
-              opacity: "0.9",
-            }}
+            className="logoImg"
             alt=""
           />
         </a>
       </div>
+      )
+          }
     </div>
   );
 }

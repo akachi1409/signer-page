@@ -146,7 +146,81 @@ body{
   top: 60%;
   right:20%;
   color:blue;
+  font-size: 24px;
   font-family: Georgia, serif;
   font-weight: 400;
   letter-spacing:0.2em;
+}
+
+.whatappImg{
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1em
+}
+.linkedImg{
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1em
+}
+.youtubeImg{
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1em
+}
+.facebookImg{
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1em
+}
+.logoImg{
+  width: 256px;
+  height: 256px;
+  margin-bottom: 1em;
+  opacity: 0.9
+}
+@media (max-width: 768px) {
+  .whatappImg{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.5em
+  }
+  .linkedImg{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.5em
+  }
+  .youtubeImg{
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0.5em
+  }
+  .facebookImg{
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0.5em
+  }
+  .logoImg{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0.5em;
+    opacity: 0.9
+  }
+  .ele-img0{
+    height:24px;
+    width:24px;
+  }
+  .ele-img1{
+    height:24px;
+    width:24px;
+  }
+  .relative-title{
+    position:fixed;
+    top: 60%;
+    right:20%;
+    color:blue;
+    font-family: Georgia, serif;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing:0.1em;
+  }
 }
