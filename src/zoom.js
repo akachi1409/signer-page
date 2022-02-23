@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Bg from "../src/assets/img/1.gif";
-import Bg1 from "../src/assets/img/bg-2.png";
+import Bg1 from "../src/assets/img/bg-2.mp4";
 
 import whatsappImg from "../src/assets/img/whatsapp.png";
 import linkedImg from "../src/assets/img/linkedin.png";
@@ -45,7 +45,7 @@ class Zoom extends Component {
           style={{ display: "flex", height: "100vh", width: "100%" }}
           onWheel={this.handleScroll}
         >
-          <img src={Bg1} style={{ width: "100%", height: "100% " }} alt="" />
+          <video src={Bg1} style={{ width: "100%", height: "100% " }} alt="" autoplay="true" loop/>
         </div>
       )}
       <div style ={{position: "fixed", top:"10%", right:"2%", display: "flex", flexDirection:"column",alignItems: "center"}}>
