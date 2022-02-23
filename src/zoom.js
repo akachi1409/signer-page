@@ -1,6 +1,12 @@
 import React, { Component } from "react";
-import Bg from "../src/assets/img/bg-1.jpg";
-import Bg1 from "../src/assets/img/bg-2.jpg";
+import Bg from "../src/assets/img/1.gif";
+import Bg1 from "../src/assets/img/bg-2.png";
+
+import whatsappImg from "../src/assets/img/whatsapp.png";
+import linkedImg from "../src/assets/img/linkedin.png";
+import youtubeImg from "../src/assets/img/youtube.png";
+import facebookImg from "../src/assets/img/facebook.png";
+import logoImg from "../src/assets/img/logo.gif";
 class Zoom extends Component {
   state = {
     size: 0,
@@ -42,6 +48,13 @@ class Zoom extends Component {
           <img src={Bg1} style={{ width: "100%", height: "100% " }} alt="" />
         </div>
       )}
+      <div style ={{position: "fixed", top:"10%", right:"2%", display: "flex", flexDirection:"column",alignItems: "center"}}>
+        <a href="#"> <img src={whatsappImg} style={{width:"64px", height:"64px", marginBottom: "1em"}} alt="" /></a>
+        <a href="#"> <img src={linkedImg} style={{ width:"48px", height:"48px", marginBottom: "1em"}} alt=""/></a>
+        <a href="#"> <img src={youtubeImg} style={{width:"52px", height:"52px", marginBottom: "1em"}} alt="" /></a>
+        <a href="#"> <img src={facebookImg} style={{width:"52px", height:"52px", marginBottom: "1em"}} alt="" /></a>
+        <a href="#"> <img src={logoImg} style={{width:"256px", height:"256px", marginBottom: "1em", opacity: "0.9"}} alt="" /></a>
+      </div>
     </div>
   );
 }
